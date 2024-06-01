@@ -1,23 +1,62 @@
-import pygame
-# Inicialización de Pygame
-pygame.init()
-# Inicialización de la superficie de dibujo
-ventana = pygame.display.set_mode((640,480))
-pygame.display.set_caption("Ejemplo 1")
-# Bucle principal del juego
-jugando = True
-while jugando:
-    # Comprobamos los eventos
-    #Comprobamos si se ha pulsado el botón de cierre de la ventana
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            jugando = False
-    # Se pinta la ventana con un color
-    # Esto borra los posibles elementos que teníamos anteriormente
-    ventana.fill(( 252, 243, 207 ))
-    # Todos los elementos del juego se vuelven a dibujar
-    pygame.display.flip()
-    # Controlamos la frecuencia de refresco (FPS)
-    pygame.time.Clock().tick(60)
-pygame.quit()
+print("Hola,Mundo")
 
+gomitas = input("Igresa el sabor de las gomitas: ")
+
+if gomitas == 'melocoton':
+    print("Ami tambien me gustan esas de melocoton👌")
+    
+elif gomitas == 'Menta':
+    print("Es refrescante 👍")
+    
+elif gomitas == 'Hierbabuena':
+    print("Ese sabor sí que me gusta 🌿")
+
+elif gomitas == 'Canela':
+    print("Un toque picante y dulce 🔥")
+
+elif gomitas == 'Frutilla':
+    print("Dulce sabor a frutas 🍓")
+
+elif gomitas == 'Sandía':
+    print("Sabor a verano y diversión 🍉")
+
+elif gomitas == 'Uva':
+    print("Un clásico que nunca falla 🍇")
+
+elif gomitas == 'Limón':
+    print("Ácido y refrescante 🍋")
+
+elif gomitas == 'Naranja':
+    print("Cítrico y revitalizante 🍊")
+
+elif gomitas == 'Manzana':
+    print("Crunchy y dulce 🍏")
+
+elif gomitas == 'Blueberry':
+    print("Explosión de sabor a bayas 🫐")
+
+elif gomitas == 'Cereza':
+    print("Un sabor profundo y jugoso 🍒")
+
+elif gomitas == 'Mango':
+    print("Tropical y exótico 🥭")
+
+elif gomitas == 'Coco':
+    print("Un escape a la playa 🌴")
+
+elif gomitas == 'Piña':
+    print("Acidez tropical 🍍")
+
+elif gomitas == 'Mandarina':
+    print("Dulce y tangy 🍊")
+
+elif gomitas == 'Mora':
+    print("Dulce con un toque de acidez 🍇")
+
+elif gomitas == 'Tutti-frutti':
+    print("Una mezcla de todos tus sabores favoritos 🍉🍓🍋")
+
+# ... You can continue adding as many flavors as you like
+
+else:
+    print("Ese sabor no lo tenemos, ¿quieres probar otro?")
